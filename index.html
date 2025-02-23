@@ -1,124 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./responsive.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-    <title>Deligo</title>
-  </head>
 
-  <body>
-    <header id="header">
-      <div class="sectionContainer header__container">
-        <a href="/" class="logo">
-          <h1 class="sitename">Deligo</h1>
-          <span>.</span>
-        </a>
-  
-        <nav class="navmenu">
-          <ul class="nav__container">
-            <li class="nav-item">
-              <a href="#" class="active">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#about">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#menu">
-                Menu
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#events">
-                Events
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#chefs">
-                Chefs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#gallery">
-                Gallery
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-  
-        <button class="btn-getstarted">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Deligo</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="sectionContainer header__container">
+      <a href="/" class="header__logo">
+        <h1 class="header__sitename">Deligo</h1>
+        <span>.</span>
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Home
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#about" class="header__nav-link">
+              About
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#why-us" class="header__nav-link">
+              Why us
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#menu" class="header__nav-link">
+              Menu
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#events" class="header__nav-link">
+              Events
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#chefs" class="header__nav-link">
+              Chefs
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#gallery" class="header__nav-link">
+              Gallery
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contact" class="header__nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__action-group">
+        <button class="header__action-button">
           Book a Table
         </button>
-      </div>
-    </header>
 
-    <main class="web-content">
-      <section id="home" class="banner section">
-        <div class="sectionContainer">
-          <div class="banner-grid">
-            <div class="content">
-              <h1>
-                Enjoy Your Healthy
-                <br>
-                Delicious Food
-              </h1>
-              <p>
-                We are team of talented designers making websites with Bootstrap
-              </p>
-              <div class="action">
-                <button class="btn-getstarted">
-                  Book a Table
-                </button>
-                <button class="btn-watch-video">
-                  <i class="fa-regular fa-circle-play"></i>
-                  <span>Watch Video</span>
-                </button>
-              </div>
+        <div class="header___hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="web-content">
+    <section id="hero" class="hero">
+      <div class="sectionContainer hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Enjoy Your Healthy
+            <br>
+            Delicious Food
+          </h1>
+          <p class="hero__description">
+            We are team of talented designers making websites with Bootstrap
+          </p>
+          <div class="hero__action-group">
+            <button class="hero__action-button">
+              Book a Table
+            </button>
+            <button class="hero__action-button--video">
+              <i class="fa-regular fa-circle-play"></i>
+              <span>Watch Video</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <img src="./images/hero-img.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__container sectionContainer">
+        <div class="section__header">
+          <h2 class="section__title">About Us<br></h2>
+          <p class="section__subtitle">
+            <span>Learn More</span>
+            <span>About Us</span>
+          </p>
+        </div>
+
+        <div class="about__content">
+          <div class="about__media-column col">
+            <img src="images/about.jpg" alt="" class="image">
+            <div class="about__booking-card">
+              <h3>Book a Table</h3>
+              <p>+84 0987654321</p>
             </div>
-            <div class="image-wrapper">
-              <img src="./images/hero-img.png" alt="">
+          </div>
+          <div class="about__info-column col">
+            <div class="about__description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>
+                    Duis aute irure dolor in reprehenderit in voluptate velit.
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in
+                    voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                  </span>
+                </li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident
+              </p>
+            </div>
+
+            <div>
+              <img src="images/about-2.jpg" class="image" alt="">
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      </div>
+    </section>
 
-      <section id="about" class="section">
-        <div class="sectionContainer">
-          <div class="title">
-            <h2>About Us<br></h2>
-            <p>
-              <span>Learn More</span>
-              <span>About Us</span>
+    <section id="why-us">
+      <div class="why-us__container sectionContainer">
+        <div class="why-us__main-panel">
+          <h2 class="why-us__title">Why Choose Yummy</h2>
+          <p class="why-us__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos.
+            Autem tempore quibusdam vel necessitatibus optio ad corporis.
+          </p>
+          <a href="#" class="why-us__action-button">
+            <span>Learn More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="why-us__action-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="why-us__feature-wrapper">
+          <div class="why-us__feature-card">
+            <div class="why-us__icon-wrapper">
+              <i class="fa-solid fa-chart-column"></i>
+            </div>
+            <h3 class="why-us__feature-title">Corporis voluptates officia eiusmod</h3>
+            <p class="why-us__feature-description">
+              Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
             </p>
           </div>
 
-          <div class="about-grid">
-            <div>
-              <img src="images/about.jpg" alt="">
+          <div class="why-us__feature-card">
+            <div class="why-us__icon-wrapper">
+              <i class="fa-regular fa-gem"></i>
             </div>
-            <div></div>
+            <h3 class="why-us__feature-title">Ullamco laboris ladore lore pan</h3>
+            <p class="why-us__feature-description">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            </p>
+          </div>
+
+          <div class="why-us__feature-card">
+            <div class="why-us__icon-wrapper">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h3 class="why-us__feature-title">Labore consequatur incidid dolore</h3>
+            <p class="why-us__feature-description">
+              Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
+            </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer id="footer">
+    <section class="stats">
+      <div class="stats__container">
+        <div class="stats__item">
+          <span class="stats__number">232</span>
+          <p class="stats__label">Clients</p>
+        </div>
 
-    </footer>
-  </body>
+        <div class="stats__item">
+          <span class="stats__number">521</span>
+          <p class="stats__label">Projects</p>
+        </div>
+
+        <div class="stats__item">
+          <span class="stats__number">1453</span>
+          <p class="stats__label">Hours Of Support</p>
+        </div>
+
+        <div class="stats__item">
+          <span class="stats__number">32</span>
+          <p class="stats__label">Workers</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="menu__container">
+        <div class="section__header">
+          <h2 class="section__title">OUR MENU<br></h2>
+          <p class="section__subtitle">
+            <span>Check Our</span>
+            <span>Yummy Menu</span>
+          </p>
+        </div>
+
+        <nav class="menu__nav">
+          <ul class="menu__tabs">
+            <li class="menu__tab menu__tab--active">
+              <button class="menu__tab-button">Starters</button>
+            </li>
+            <li class="menu__tab">
+              <button class="menu__tab-button">Breakfast</button>
+            </li>
+            <li class="menu__tab">
+              <button class="menu__tab-button">Lunch</button>
+            </li>
+            <li class="menu__tab">
+              <button class="menu__tab-button">Dinner</button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu__content">
+          <h3 class="menu__section-title">Starters</h3>
+
+          <div class="menu__grid">
+            <!-- Menu Item 1 -->
+            <div class="menu__item">
+              <div class="menu__item-image-wrapper">
+                <img src="https://themewagon.github.io/yummy-red/assets/img/menu/menu-item-1.png" alt="Magnam Tiste"
+                  class="menu__item-image">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Magnam Tiste</h4>
+                <p class="menu__item-description">Lorem, ipsum, dolor, sit, amet</p>
+                <span class="menu__item-price">$5.95</span>
+              </div>
+            </div>
+
+            <!-- Menu Item 2 -->
+            <div class="menu__item">
+              <div class="menu__item-image-wrapper">
+                <img src="https://themewagon.github.io/yummy-red/assets/img/menu/menu-item-2.png" alt="Aut Luia"
+                  class="menu__item-image">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Aut Luia</h4>
+                <p class="menu__item-description">Lorem, ipsum, dolor, sit, amet</p>
+                <span class="menu__item-price">$14.95</span>
+              </div>
+            </div>
+
+            <!-- Menu Item 3 -->
+            <div class="menu__item">
+              <div class="menu__item-image-wrapper">
+                <img src="https://themewagon.github.io/yummy-red/assets/img/menu/menu-item-3.png" alt="Est Eligendi"
+                  class="menu__item-image">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Est Eligendi</h4>
+                <p class="menu__item-description">Lorem, ipsum, dolor, sit, amet</p>
+                <span class="menu__item-price">$8.95</span>
+              </div>
+            </div>
+
+            <!-- Menu Item 4 -->
+            <div class="menu__item">
+              <div class="menu__item-image-wrapper">
+                <img src="https://themewagon.github.io/yummy-red/assets/img/menu/menu-item-4.png" alt="Eos Luibusdam"
+                  class="menu__item-image">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Eos Luibusdam</h4>
+                <p class="menu__item-description">Lorem, ipsum, dolor, sit, amet</p>
+                <span class="menu__item-price">$12.95</span>
+              </div>
+            </div>
+
+            <!-- Menu Item 5 -->
+            <div class="menu__item">
+              <div class="menu__item-image-wrapper">
+                <img src="https://themewagon.github.io/yummy-red/assets/img/menu/menu-item-5.png" alt="Eos Luibusdam"
+                  class="menu__item-image">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Eos Luibusdam</h4>
+                <p class="menu__item-description">Lorem, ipsum, dolor, sit, amet</p>
+                <span class="menu__item-price">$12.95</span>
+              </div>
+            </div>
+
+            <!-- Menu Item 6 -->
+            <div class="menu__item">
+              <div class="menu__item-image-wrapper">
+                <img src="https://themewagon.github.io/yummy-red/assets/img/menu/menu-item-6.png"
+                  alt="Laboriosam Direva" class="menu__item-image">
+              </div>
+              <div class="menu__item-content">
+                <h4 class="menu__item-title">Laboriosam Direva</h4>
+                <p class="menu__item-description">Lorem, ipsum, dolor, sit, amet</p>
+                <span class="menu__item-price">$9.95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="testimonials__container sectionContainer">
+        <div class="section__header">
+          <h2 class="section__title">TESTIMONIALS<br></h2>
+          <p class="section__subtitle">
+            <span>WHAT ARE THEY</span>
+            <span>SAYING ABOUT US</span>
+          </p>
+        </div>
+
+        <div class="testimonial-list">
+          <div class="testimonial-card">
+            <div class="testimonial-card__content">
+              <div class="testimonial-card__quote">
+                <blockquote class="testimonial-card__text">
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </blockquote>
+                <div class="testimonial-card__info">
+                  <h3 class="testimonial-card__name">Saul Goodman</h3>
+                  <p class="testimonial-card__title">CEO & Founder</p>
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__star">★</span>
+                    <span class="testimonial-card__star">★</span>
+                    <span class="testimonial-card__star">★</span>
+                    <span class="testimonial-card__star">★</span>
+                    <span class="testimonial-card__star">★</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__image-wrapper">
+                  <img src="https://themewagon.github.io/yummy-red/assets/img/testimonials/testimonials-3.jpg"
+                    alt="Saul Goodman" class="testimonial-card__image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-pagination">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="events-container">
+        <div class="event-list">
+          <div class="event-card">
+            <div class="event-card__image">
+              <img src="https://themewagon.github.io/yummy-red/assets/img/events-1.jpg"
+                alt="Birthday event table setting" class="event-card__img">
+            </div>
+            <div class="event-card__content">
+              <h2 class="event-card__title">Birthday Parties</h2>
+              <div class="event-card__price">
+                <span class="event-card__currency">$</span>
+                <span class="event-card__amount">499</span>
+              </div>
+              <p class="event-card__description">
+                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam
+                ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
+              </p>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-card__image">
+              <img src="https://themewagon.github.io/yummy-red/assets/img/events-2.jpg"
+                alt="Birthday event table setting" class="event-card__img">
+            </div>
+            <div class="event-card__content">
+              <h2 class="event-card__title">Birthday Parties</h2>
+              <div class="event-card__price">
+                <span class="event-card__currency">$</span>
+                <span class="event-card__amount">499</span>
+              </div>
+              <p class="event-card__description">
+                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam
+                ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
+              </p>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-card__image">
+              <img src="https://themewagon.github.io/yummy-red/assets/img/events-3.jpg"
+                alt="Birthday event table setting" class="event-card__img">
+            </div>
+            <div class="event-card__content">
+              <h2 class="event-card__title">Birthday Parties</h2>
+              <div class="event-card__price">
+                <span class="event-card__currency">$</span>
+                <span class="event-card__amount">499</span>
+              </div>
+              <p class="event-card__description">
+                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam
+                ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="event-pagination">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section__header">
+        <h2 class="section__title">contact<br></h2>
+        <p class="section__subtitle">
+          <span>Need Help?</span>
+          <span>Contact Us</span>
+        </p>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-info__card">
+          <div class="contact-info__icon-wrapper">
+            <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="contact-info__content">
+            <h3 class="contact-info__title">Address</h3>
+            <p class="contact-info__text">A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+
+        <div class="contact-info__card">
+          <div class="contact-info__icon-wrapper">
+            <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </div>
+          <div class="contact-info__content">
+            <h3 class="contact-info__title">Call Us</h3>
+            <p class="contact-info__text">+84 0987654321</p>
+          </div>
+        </div>
+
+        <div class="contact-info__card">
+          <div class="contact-info__icon-wrapper">
+            <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="contact-info__content">
+            <h3 class="contact-info__title">Email Us</h3>
+            <p class="contact-info__text">info@example.com</p>
+          </div>
+        </div>
+
+        <div class="contact-info__card">
+          <div class="contact-info__icon-wrapper">
+            <svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="contact-info__content">
+            <h3 class="contact-info__title">Opening Hours</h3>
+            <p class="contact-info__text">Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <div class="contact-form__row">
+          <div class="contact-form__field">
+            <input type="text" class="contact-form__input" placeholder="Your Name">
+          </div>
+          <div class="contact-form__field">
+            <input type="email" class="contact-form__input" placeholder="Your Email">
+          </div>
+        </div>
+
+        <div class="contact-form__field">
+          <input type="text" class="contact-form__input" placeholder="Subject">
+        </div>
+
+        <div class="contact-form__field">
+          <textarea class="contact-form__textarea" placeholder="Message"></textarea>
+        </div>
+
+        <div class="contact-form__actions">
+          <button type="submit" class="contact-form__button">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer__container">
+      <div class="footer__content">
+        <div class="footer__info">
+          <div class="footer__block">
+            <div class="footer__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="footer__details">
+              <h3 class="footer__title">Address</h3>
+              <p class="footer__text">A108 Adam Street<br>New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="footer__block">
+            <div class="footer__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div class="footer__details">
+              <h3 class="footer__title">Contact</h3>
+              <p class="footer__text">
+                Phone: +84 0987654321<br>
+                Email: info@example.com
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__block">
+            <div class="footer__icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="footer__details">
+              <h3 class="footer__title">Opening Hours</h3>
+              <p class="footer__text">
+                Mon-Sat: 11AM - 23PM<br>
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__follow-us">
+            <h3 class="footer__title">Follow Us</h3>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                  </path>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          ©<span class="footer__brand">Deligo</span>
+          All Rights Reserved
+        </div>
+        <div class="footer__credits">
+          Crafted with love by the Deligo team
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
